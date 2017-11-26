@@ -1,0 +1,13 @@
+1. zip all the fields (not the folder) of the project in a file and
+give it the extension ".love". Ex: pong.love
+2. create a separate folder in another directory and from the love installation
+folder copy all the .dll plus the love.exe files and paste them in this new folder,
+also add the .love file created in the last step.
+3. within this new folder, create a new file with extension .bat (ex: build.bat)
+and include the following code inside 
+  copy /b love.exe+%1 "%~n1.exe"
+save the file .bat file.
+4. drag the .love file and drop it over the .bat file, this should create a
+new .exe file
+5. take all the .dll files plus the new .exe file and zip them in a single 
+file, this file is what you need to share your game!.
